@@ -1,0 +1,137 @@
+<?php
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Editar</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+        <link rel="icon" type="image/jpg" href="../CSS/images/AA.png">
+
+</head>
+<body >
+    
+ 
+   
+	<main>
+            <div id="progressBar"></div>
+            <div id="progressBarContainer"></div>
+            
+            
+            
+		<form action="modificarsql.php"  method="post" class="formulario" id="formulario">
+                    
+                   <!-- Tema imagen -->
+          
+                <img src="../CSS/images/acelo.png" class="imagen" alt="UTP congreso internacional"/>  
+                
+                 <!-- deshabilitar click derecho  -->
+                 
+                 <script type="text/javascript">
+                 document.oncontextmenu = function(){return false;}
+                 </script>
+                 
+                
+            <!-- Grupo: Tema -->
+            <h1 class="tituloo">Editar Datosº</h1>
+            
+          
+                <!-- Grupo: ID -->
+			<div class="formulario__grupo" id="grupo__id">
+				<label for="id" class="formulario__label">ID</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="id" id="id" placeholder="1" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">solo numeros.</p>
+			</div>
+
+             <!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Brian Ram" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+			</div>
+             
+             <!-- Grupo: Tema -->
+			<div class="formulario__grupo" id="grupo__tema">
+				<label for="tema" class="formulario__label">Tema</label>
+				<div class="formulario__grupo-input">
+                                    <input disabled type="text" class="formulario__input" value="temauno" >
+                                    <input type="hidden" class="formulario__input" name="tema" id="tema" value="1" >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El tema solo puede contener letras y espacios.</p>
+			</div>
+
+			<!-- Grupo: Cedula -->
+			<div class="formulario__grupo" id="grupo__cedula">
+				<label for="cedula" class="formulario__label">Cedula</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="cedula" id="usuario" placeholder="3-748-571" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La cedula tiene que ser de 7 a 12 dígitos y solo puede contener numeros, letras, guion y guion bajo.</p>
+			</div>
+
+                        
+                        <!-- Grupo: Facultad -->
+			
+                                <label for="facultad" class="formulario__label">Facultad</label>                 
+                        <div class="select">
+
+                            <select name="facultad" id="grupo_facultad" required>
+                                <option value="">Seleccione su facultad</option>
+                                <option value="Ingeniería Civil">Ingeniería Civil</option>
+                                <option value="Ingeniería Eléctrica">Ingeniería Eléctrica</option>
+                                <option value="Ingeniería Mecánica"> Ingeniería Mecánica</option>
+                                <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                                <option value="Ingeniería de Sistemas Computacionales">Ingeniería de Sistemas Computacionales</option>
+                                <option value="Ciencias y Tecnología">Ciencias y Tecnología</option>
+                             </select>
+                        </div>
+			
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="opcional" >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+                        <br>
+
+			<!-- <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> rellene el formulario correctamente. </p>
+			</div> -->
+
+			<div  class="formulario__grupo formulario__grupo-btn-enviar">
+				<button id="btnn" type="submit" name="enviar" class="formulario__btn">Modificar</button>
+				<!-- <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p> -->
+			</div>
+		</form>
+	</main>
+
+	<script src="../JS/formu.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

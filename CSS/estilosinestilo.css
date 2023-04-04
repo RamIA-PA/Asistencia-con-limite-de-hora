@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/04/2022, 09:43:00 PM
+    Author     : Ram
+
+
+*/
+
+
+
+
+.card-body1 {
+            background: url(../CSS/images/gwe.jpg); 
+            background-size: cover;  
+                   
+}
+.tb1{
+           color: white;
+                   
+}
+
+.col-md-12 {
+    
+    min-width: 990px;
+        max-width: 700px;
+
+
+}
+   
+ 
+ 
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url(../CSS/images/gwen.jpg); 
+       
+        background-size: cover;  
+        background-attachment: scroll;
+         
+        
+}
+
+
+
+
+.est {
+    
+
+        background: cornflowerblue;
+        font-family: 'calibri';
+        color: black;   
+        
+         
+     
+      
+}
+
+
+.card-header {
+  
+        background: cornflowerblue;
+        font-family: 'calibri';
+        color: black;
+        
+      
+}
+
+.n1 {
+    background: deeppink;
+    border-color: firebrick;
+         border-width: 2px;
+         border-style: solid;
+
+}
+
+.n2 {
+    background: dodgerblue;
+    border-color: aqua;
+         border-width: 2px;
+         border-style: solid;
+
+}
